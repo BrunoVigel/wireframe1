@@ -41,12 +41,15 @@ header {
     background-color: var(--light-gray);
 }
 
-.logo {
+#logo {
     display:flex;
     font-weight: bolder;
     font-size: 2.5em;
     align-items: center;
     margin-left: 5%;
+    text-decoration: none;
+    color: black;
+    border: none;
 }
 
 header ul {
@@ -66,6 +69,10 @@ li a{
     margin-left: .5em;
 }
 
+a:hover {
+    border-bottom: 1px black solid;
+}
+
 nav {
     margin: auto;
 }
@@ -74,19 +81,55 @@ nav {
     height: 8vh;
     width: 12vw;
     display: flex;
-    background-color: black;
+    align-items: center;
     margin-right: 5%;
+}
+
+.buttons a {
+    color: black;
+    border: none;
+}
+
+.buttons i {
+    margin-right: .5em;
 }
 
 /*SECTION SLIDER---------------------------------------------------------*/
 .slider {
-    max-height: 100vh;
+    height: 100vh;
 }
-.slider img {
-    max-height: 100vh;
-    max-width: 100%;
+.swiper-container {
     width: 100%;
-}
+    height: 100%;
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--dark-gray);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 .icons {
     display: flex;
@@ -200,6 +243,12 @@ nav {
     margin-top: 1%;
 }
 
+.card-info button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
 .product-slider {
     position: absolute;
     top: 23%;
@@ -216,8 +265,14 @@ nav {
 
 .socials p {
     text-align: center;
-    font-size: 2.3em;
 }
+
+.socials a {
+    font-size: 2.3em;
+    text-decoration: none;
+    color: black;
+}
+
 
 .container {
     display: flex;
@@ -296,6 +351,11 @@ footer h1:after {
     flex-wrap: wrap;
 }
 
+.submenu1 a {
+    margin: 20% 0 0 0;
+    text-decoration: none;
+}
+
 .submenu1 li {
     list-style: none;
     margin: 4% 10% 0 0;
@@ -338,8 +398,11 @@ footer h1:after {
     padding: 0;
 }
 
-
-.submenu2 li {
+.submenu2 li{
     list-style: none;
+}
+
+.submenu2 a {
     margin: 20% 0 0 0;
+    text-decoration: none;
 }
