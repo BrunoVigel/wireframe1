@@ -1,5 +1,5 @@
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".caralho", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -16,3 +16,7 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  setTimeout(() => {
+    swiper.autoplay.stop()
+  }, 7000);
