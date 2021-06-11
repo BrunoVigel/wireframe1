@@ -44,7 +44,6 @@ header {
     font-weight: bolder;
     font-size: 2.5em;
     align-items: center;
-    margin-left: 5%;
     text-decoration: none;
     color: black;
     border: none;
@@ -562,7 +561,9 @@ footer h1:after {
         transform: rotate(-45deg) translate(35px, 35px);
       }
 
-
+      .buttons {
+          margin-right: 0;
+      }
     /*ICONS--------------------------------------------------------*/
     .icons {
         flex-wrap: wrap;
