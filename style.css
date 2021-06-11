@@ -30,9 +30,6 @@
     background-color: var(--light-blue);
   }
 
-
-
-
 /*HEADER---------------------------------------------------------------*/
 header {
     display: flex;
@@ -57,6 +54,7 @@ header ul {
     display: inline;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 header li {
@@ -177,13 +175,14 @@ nav {
 .section1 {
     display: flex;
     background-color: var(--light-gray);
+    max-height: 70vh;
 }
 
 
 .section1 .text {
     font-size: 1.5em;
     max-width: 25%;
-    margin: 6.5% 10% 0 5%;
+    margin: 1em 0;
 }
 
 .section1 .text h1 {
@@ -313,7 +312,7 @@ nav {
 }
 
 .container :nth-child(2) {
-    margin-top: 8%
+    margin-top: 8%;
 }
 
 .container-item {
@@ -330,8 +329,7 @@ nav {
     font-size: 1.4em;
     justify-content: center;
     align-self: center;
-    max-width: 65%;
-    height: auto;
+    height: 100%;
 }
 
 
@@ -450,6 +448,11 @@ footer h1:after {
 
 /*Responsivo*/
 @media (max-width: 690px) {
+    .container-padding {
+        padding: 0 2em;
+    }
+  
+
     header {
         justify-content: space-between;
     }
@@ -482,8 +485,8 @@ footer h1:after {
     
       #text {
         position: absolute;
-        top: 30%;
-        left: 30%;
+        top: 40%;
+        left: 35%;
         color: white;
         font-size: .9em;
         font-weight: 700;
@@ -575,7 +578,7 @@ footer h1:after {
     /*SECTION1-----------------------------------------------------*/
     .section1 {
         width: 100%;
-        height: auto;
+        max-height: 100%;
         flex-direction: column;
     }
 
@@ -619,14 +622,12 @@ footer h1:after {
     .card-completo {
         flex-direction: column;
         margin: 2em 0 0 0;
-        padding: 0 2em;
     }
 
     .card-info {
         max-width:100%;
         margin: 2em auto;
         font-size: 1em;
-        padding: 0 2em;
     }
 
     .card-info h1 {
@@ -634,7 +635,7 @@ footer h1:after {
     }
     
     .product-slider {
-        margin: 0 auto;
+        margin: 0 auto 2em;
     }
 
 
@@ -650,8 +651,8 @@ footer h1:after {
     }
     .container-item {
         font-size: .5em;
-        max-width: 60vw;
-        max-height: 25vh;
+        max-width: 84vw;
+        max-height: 35vh;
         margin-top: 2em;
     }
 
