@@ -30,6 +30,10 @@
     background-color: var(--light-blue);
   }
 
+  .container-padding {
+      padding: 0 70px;
+  }
+
 /*HEADER---------------------------------------------------------------*/
 header {
     display: flex;
@@ -96,12 +100,15 @@ nav {
     /* width: 12vw; */
     display: flex;
     align-items: center;
-    margin-right: 5%;
 }
 
 .buttons a {
     color: black;
     border: none;
+}
+
+.buttons a:nth-child(2) {
+    margin: 0 .4em;
 }
 
 
@@ -174,7 +181,6 @@ nav {
 .section1 {
     display: flex;
     background-color: var(--light-gray);
-    max-height: 70vh;
 }
 
 
@@ -199,6 +205,7 @@ nav {
     text-align: justify;
     font-size: 1.2em;
     background-color: var(--light-gray);
+    margin-left: 15em;
 }
 
 .banner h2 {
@@ -210,7 +217,9 @@ nav {
 }
 
 .banner-right {
-    margin: -10vh 0 0 3vw;
+    position: absolute;
+    left: 54.5vw;
+    top: 135vh;
 }
 
 
@@ -223,6 +232,7 @@ nav {
     width: 85vw;
     background-color: var(--light-gray);
     display: flex;
+    position: relative;
 }
 
 .product {
@@ -232,15 +242,16 @@ nav {
 
 .card {
     display: flex;
+    position: relative;
 }
 
 .card-completo {
     display: flex;
-    margin: 6% 0 0 6%;
+    margin-top: 4em;
 }
 
 .card-info {
-    max-width: 40%;
+    max-width: 30%;
     font-size: 1.5em;
     margin-top: -1.5%;
 }
@@ -276,8 +287,12 @@ nav {
 
 .product-slider {
     width: 100%;
-    max-height: 450px;
-    margin: auto -10vw auto 0;
+    max-width: 650px;
+    max-height: 400px;
+    position: absolute;
+    right: -201px; 
+    bottom: 200px;
+    z-index: 100;
 }
 
 .product-slider img {
@@ -312,6 +327,7 @@ nav {
 
 .container :nth-child(2) {
     margin-top: 8%;
+    margin: 0 1em;
 }
 
 .container-item {
@@ -320,7 +336,6 @@ nav {
     width: 100%;
     height: auto;
     background-color: var(--dark-gray);
-    margin: 0 2%;
 }
 
 .container-item p{
@@ -362,7 +377,7 @@ footer h1:after {
 
 .menus {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 1.3em;
 }
 
@@ -373,7 +388,7 @@ footer h1:after {
 
 /*SUBMENU1----------------------------------------------------------------------*/
 .submenu1 {
-    max-width: 15%;
+    max-width: 12%;
 }
 
 
@@ -397,7 +412,7 @@ footer h1:after {
 
 /*FORM--------------------------------------------------------------------------*/
 .form {
-    margin: 0 20vw;
+    /* margin: 0 20vw; */
 }
 
 #input-email {
@@ -521,7 +536,7 @@ footer h1:after {
         height: 35px;
         cursor: pointer;
         transition: all .5s ease-in-out;
-        margin-left: 1em;
+        margin-left: .4em;
       }
     .menu-btn__burger {
         width: 24px;
@@ -581,6 +596,7 @@ footer h1:after {
         width: 100%;
         max-height: 100%;
         flex-direction: column;
+        position: relative;
     }
 
     .section1 img {
@@ -592,6 +608,10 @@ footer h1:after {
         font-size:1em;
     }
 
+    .banner {
+        margin-left: 0;
+    }
+
     .banners {
         flex-direction: column;
         margin:0;
@@ -599,6 +619,7 @@ footer h1:after {
 
     .banner-right {
         margin:0;
+        position:static;
     }
 
 
@@ -637,6 +658,7 @@ footer h1:after {
     
     .product-slider {
         margin: 0 auto 2em;
+        position:static;
     }
 
 
