@@ -486,6 +486,60 @@ footer h1:after {
 
 
 /*Responsivo*/
+
+@media (max-width: 1100px) {
+    .section2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30vh;
+    }
+
+    .imagewrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card-completo {
+        flex-direction: column;
+        margin: 2em 0 0 0;
+    }
+
+    .card-completo img {
+        margin: 0 auto;
+    }
+
+    .card-info {
+        max-width:85%;
+        margin: 2em auto;
+        font-size: 1em;
+    }
+
+    .card-info h1 {
+        font-size: 2em;
+    }
+    
+    .product-slider {
+        margin: 0 auto 2em;
+        position:static;
+    }
+
+    .imagewrapper2 {
+        width: 100%;
+        position:static;
+    }
+}
+
 @media (max-width: 767px) {
     .container-padding {
         padding: 0 2em;
@@ -686,9 +740,13 @@ footer h1:after {
         margin: 0 auto;
     }
 
+    .imagewrapper {
+        margin: 0 auto;
+    }
+
     .card-info {
-        max-width:100%;
-        margin: 2em auto;
+        width: 100%;
+        margin: 4em auto;
         font-size: 1em;
     }
 
