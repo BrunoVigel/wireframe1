@@ -10,6 +10,8 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
   }
   
   *:before,
@@ -32,6 +34,10 @@
 
   .container-padding {
       padding: 0 70px;
+  }
+
+  img {
+      width: 100%;
   }
 
 /*HEADER---------------------------------------------------------------*/
@@ -161,6 +167,8 @@ nav {
 .icons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
 }
 
 .icons span {
@@ -169,8 +177,8 @@ nav {
     background-color: var(--dark-gray);
     border-radius: 50%;
     margin-right: 2em;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
 
@@ -180,14 +188,21 @@ nav {
 
 .section1 {
     display: flex;
+    justify-content: space-between;
     background-color: var(--light-gray);
+    padding-top: 60px;
 }
 
 
 .section1 .text {
     font-size: 1.5em;
-    max-width: 25%;
-    margin: 4.7em 0;
+    max-width: 30%;
+    padding-right: 1em;
+    margin-top: 4.7em;
+}
+
+.text p {
+    margin-top: 0;
 }
 
 .section1 .text h1 {
@@ -196,17 +211,24 @@ nav {
 
 .banners {
     display: flex;
-    margin-top: 8%;
-    margin-bottom: -3%;
+    position: relative;
+    top:40px;
+    width: 60%;
 }
 
+
 .banner {
-    max-width: 500px;
     text-align: justify;
     font-size: 1.2em;
     background-color: var(--light-gray);
-    margin-left: 15em;
 }
+
+
+.banners > .banner {
+    margin-top: 4.8em;
+    width: 50%;
+}
+
 
 .banner h2 {
     text-align: center;
@@ -218,19 +240,19 @@ nav {
 }
 
 .banner-right {
+    padding-left: 24px;
     position: absolute;
-    left: 54.5vw;
-    top: 135vh;
+    right: 0;
+    width: 50%;
 }
-
 
 
 
 /*SECTION2------------------------------------------------------*/
 .section2 {
-    margin-top: 80vh;
+    margin-top: 400px;
     margin-bottom: 35vh;
-    width: 85vw;
+    width: 90%;
     background-color: var(--light-gray);
     display: flex;
     position: relative;
@@ -249,16 +271,22 @@ nav {
 .card-completo {
     display: flex;
     margin-top: 4em;
+    min-width: 900px;
+}
+
+.imagewrapper {
+    max-width: 30%;
 }
 
 .card-info {
     max-width: 30%;
-    font-size: 1.5em;
-    margin-top: -1.5%;
+    font-size: 1.1em;
+    padding-left: 25px
 }
 
 .card-info h1{
     font-size: 3em;
+    padding: 25px 0;
 }
 
 .card-completo img {
@@ -276,7 +304,7 @@ nav {
     background-color: black;
     border: none;
     border-radius: 4px;
-    margin-top: 1%;
+    margin-top: 105px;
 }
 
 .card-info button:hover {
@@ -286,21 +314,17 @@ nav {
     cursor: pointer;
 }
 
-.product-slider {
-    width: 100%;
-    max-width: 650px;
-    max-height: 400px;
+.imagewrapper2 {
+    width: 40%;
     position: absolute;
-    right: -201px; 
-    bottom: 200px;
-    z-index: 100;
+    right: -120px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .product-slider img {
     width: 100%;
     height: auto;
-    max-width: 650px;
-    max-height: auto;
 }
 
 
@@ -462,7 +486,7 @@ footer h1:after {
 
 
 /*Responsivo*/
-@media (max-width: 690px) {
+@media (max-width: 767px) {
     .container-padding {
         padding: 0 2em;
     }
@@ -500,11 +524,12 @@ footer h1:after {
     
       #text {
         position: absolute;
-        top: 40%;
-        left: 35%;
+        top: 50vh;
+        left: 50vw;
         color: white;
         font-size: .9em;
         font-weight: 700;
+        z-index: 999;
       }
 
       #text li{
@@ -582,7 +607,7 @@ footer h1:after {
       }
     /*ICONS--------------------------------------------------------*/
     .icons {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     .icons span {
@@ -597,7 +622,7 @@ footer h1:after {
         width: 100%;
         max-height: 100%;
         flex-direction: column;
-        position: relative;
+        position: static;
     }
 
     .section1 img {
@@ -611,17 +636,26 @@ footer h1:after {
     }
 
     .banner {
-        margin-left: 0;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .banners {
         flex-direction: column;
         margin:0;
+        position: static;
+        width: 100%;
+    }
+
+    .banners > .banner {
+        width: 100%;
     }
 
     .banner-right {
         margin:0;
         position:static;
+        width: 100%;
+        padding-left: 0;
     }
 
 
@@ -646,6 +680,10 @@ footer h1:after {
     .card-completo {
         flex-direction: column;
         margin: 2em 0 0 0;
+    }
+
+    .card-completo img {
+        margin: 0 auto;
     }
 
     .card-info {
