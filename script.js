@@ -23,6 +23,11 @@ setTimeout(() => {
 
 
 
+
+
+
+
+
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -41,6 +46,12 @@ const overlay = document.querySelector(".overlay")
 hamburger.addEventListener("click", () => {
   overlay.classList.toggle("open");
 });
+
+
+
+
+
+
 
 
 
