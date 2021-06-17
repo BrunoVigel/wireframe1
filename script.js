@@ -22,7 +22,23 @@ setTimeout(() => {
 }, 7000);
 
 
-
+var swiper = new Swiper(".caralho-2", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    stopOnLastSlide: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 
 
@@ -79,6 +95,6 @@ const section = document.querySelector('.section2')
 botao.addEventListener('click', function() {
   window.scrollTo({
     top: section.offsetTop,
-    behavior: 'smooth'
+    behavior: 's'
   })
 })
