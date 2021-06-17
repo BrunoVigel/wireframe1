@@ -256,7 +256,7 @@ nav {
     bottom: -65px;
     left: 100px;
     padding-top: 10em;
-    display: none;
+    cursor: pointer;
 }
 
 

@@ -70,3 +70,15 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+
+const botao = document.querySelector('.scroll-down')
+const section = document.querySelector('.section2')
+
+botao.addEventListener('click', function() {
+  window.scrollTo({
+    top: section.offsetTop,
+    behavior: 'smooth'
+  })
+})
