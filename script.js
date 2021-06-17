@@ -95,6 +95,6 @@ const section = document.querySelector('.section2')
 botao.addEventListener('click', function() {
   window.scrollTo({
     top: section.offsetTop,
-    behavior: 's'
+    behavior: 'smooth'
   })
 })
