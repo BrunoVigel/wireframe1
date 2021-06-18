@@ -1,5 +1,5 @@
 
-var swiper = new Swiper(".caralho", {
+var swiper = new Swiper(".swiper-header", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -10,10 +10,6 @@ var swiper = new Swiper(".caralho", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -22,23 +18,14 @@ setTimeout(() => {
 }, 7000);
 
 
-var swiper = new Swiper(".caralho-2", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-    stopOnLastSlide: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+var swiper2 = new Swiper(".swiper-product", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
+
+
 
 
 
